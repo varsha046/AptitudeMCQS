@@ -62,6 +62,7 @@ const extractQuestionsData = (prompt_responses) => {
             defaultTagNames.push(companyTag);
             defaultTagNames.push(offlineTag);   
             question_data["question_id"] = v4();
+            defaultTagNames.push(question_data["question_id"]);
             question_data["question_type"] = "MULTIPLE_CHOICE";
             const question=prompt_response["question_content"];
             const formattedquestion=question.replaceAll('\\','\\ ');
@@ -74,7 +75,7 @@ const extractQuestionsData = (prompt_responses) => {
             question_data["Language"] = "ENGLISH";
             question_data["answer_count"] = 4;
             question_data["content_type"] = prompt_response["question_type"];
-            question_data["tag_name_count"] = 7;
+            question_data["tag_name_count"] = 8;
             question_data["tag_names"] = "";
            
             
@@ -89,7 +90,7 @@ const extractQuestionsData = (prompt_responses) => {
             // console.log(question_data["question_content"], topic_difficulty_level, blooms_difficulty_level, question_difficulty_level, defaultTagNames);
             final_json_sheet.push(question_data);
 
-            for (let i=0; i<7; i++) {
+            for (let i=0; i<8; i++) {
                 let tags_data = {};
                 tags_data["question_id"] = "";
                 tags_data["question_type"] = "";
