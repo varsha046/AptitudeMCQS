@@ -2,7 +2,8 @@
 
 Installation of nodeJs software from [node](https://nodejs.org/en/download)  
 Open this directory in terminal and run `npm install` or `npm i`. 
-Open this directory in terminal and run `npm install fs dotenv remark @azure/openai`
+
+Open this directory in terminal and run `npm install fs dotenv remark @azure/openai`.
 After the installation of dependencies, run `npm run setup`.
 
 ### Steps
