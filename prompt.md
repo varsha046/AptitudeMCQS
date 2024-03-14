@@ -10,9 +10,9 @@ To generate is to output the provided content exactly as it is, without making a
 [
 { "question_content": "Question Here",
   "option-1 ": "option-1 here",
-  "option-2 ": "option-1 here",
-  "option-3 ": "option-1 here",
-  "option-4 ": "option-1 here",
+  "option-2 ": "option-2 here",
+  "option-3 ": "option-3 here",
+  "option-4 ": "option-4 here",
   "Correct answer ": "Answer here",
 }
 ]

@@ -1,10 +1,12 @@
 import fs from "fs";
+
+
 import dotenv from "dotenv";
 dotenv.config()
 
 const parent_json_file_name = process.env.PARENT_JSON_FILE_NAME;
-const questions_response_path = "./responses_PE/" + parent_json_file_name + "_r_PE.json";
-const final_responses_path = "./final_PE/" + parent_json_file_name + "_final_PE.json";
+const questions_response_path = "./responses_Type/" + parent_json_file_name + "_r_Type.json";
+const final_responses_path = "./final_Type/" + parent_json_file_name + "_final_type.json";
 
 const readFileAsync = async (file, options) =>
   await new Promise((resolve, reject) => {
@@ -47,18 +49,18 @@ const extractQuestionsData = (prompt_responses) => {
         prompt_response_json.forEach(response => {
             let question_data = {};
             question_data["question_content"] = response["problem_text"];
-           
+            question_data["question_type"] = response["question-type"];
             question_data["option-1"]=response["option-1"];
-           
+            question_data["option-1-Type"]=response["option-1 type"];
             question_data["option-2"]=response["option-2"];
-            
+            question_data["option-2-Type"]=response["option-2 type"];
             question_data["option-3"]=response["option-3"];
-          
+            question_data["option-3-Type"]=response["option-3 type"];
             question_data["option-4"]=response["option-4"];
-            
+            question_data["option-4-Type"]=response["option-4 type"];
             question_data["Answer"]=response["correct answer"];
             question_data["Explanation"]=response["Explanation"];
-          
+            question_data["Explanation-type"]=response["Explanation-type"];
             question_data["analyzed answer"]=response["analyzed answer"];
             question_data["Matchness"]=response["Matchness"];
             // console.log(question_data["question_content"], topic_difficulty_level, blooms_difficulty_level, question_difficulty_level, defaultTagNames);

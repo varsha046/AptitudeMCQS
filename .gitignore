@@ -1,0 +1,17 @@
+.env
+
+api_responses.json
+
+/node_modules
+/parent_json
+/final_PE
+/final_responses
+/final_review
+/Final_sheet
+/final_tags
+/Parphrase_Explanation
+/Questions
+/responses_json
+/responses_PE
+/responses_tags
+/Tags

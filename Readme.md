@@ -3,7 +3,7 @@
 Installation of nodeJs software from [node](https://nodejs.org/en/download)  
 Open this directory in terminal and run `npm install` or `npm i`.  
 Open this directory in terminal and run `npm install fs dotenv remark @azure/openai`.
-
+After the installation of dependencies, run `npm run setup`.
 
 ### Steps
 
@@ -15,6 +15,9 @@ Step-5:- Run the following command in terminal: `node generate_final.js`.
 Step-6:- Run the following command in terminal: `node generate_PE.js`.
 Step-7:- Run the following command in terminal: `node generate_responsesPE.js`.
 Step-8:- Run the following command in terminal: `node generate_finalPE.js`.
+Step-8:- Run the following command in terminal: `node generate_types.js`.
+Step-8:- Run the following command in terminal: `node generate_responsestypes.js`.
+Step-8:- Run the following command in terminal: `node generate_final_types.js`.
 Step-9:- Run the following command in terminal: `node generate_tags.js`.  
 Step-10:- Run the following command in terminal: `node generate_responsestags.js`.  
 Step-11:- Run the following command in terminal: `node generate_finaltags.js`.
