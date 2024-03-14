@@ -1,6 +1,7 @@
 import fs from "fs";
 
 const parent_json_path = "./parent_json";
+const para = "./Parphrase_Explanation";
 const final_PE_path = "./final_PE";
 const final_responses_path = "./final_responses";
 const final_review_path = "./final_review";
@@ -38,6 +39,7 @@ function start() {
         createFolder(responses_json_path);
         createFolder(final_responses_path);
         createFolder(final_review_path);
+        createFolder(para);
         createFolder(final_tags_path);
         createFolder(Questions_path);
         createFolder( responses_PE_path);
